@@ -17,6 +17,7 @@
 <script>
 import ExampleComponentVue from '../../../vendor/laravel/ui/src/Presets/vue-stubs/ExampleComponent.vue'
     export default {
+
         mounted() {
             console.log('Component mounted.')
         }

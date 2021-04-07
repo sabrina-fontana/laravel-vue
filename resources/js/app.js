@@ -8,6 +8,9 @@
  window.Vue = Vue
  require('./bootstrap');
 
+ import axios from 'axios'
+ Vue.prototype.$http = axios;
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -20,6 +23,7 @@
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('pokemon-component', require('./components/PokemonComponent.vue').default);
 
 
 /**
